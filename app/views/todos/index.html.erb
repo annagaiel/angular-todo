@@ -3,7 +3,7 @@
 <div ng-app="app">
   <div ng-controller="todoCtrl">
     <ul>
-      <li ng-repeat="task in task_list track by $index" ng-click="toggleState(task)">
+      <li ng-repeat="task in task_list track by $index" ng-click="toggleState(task)" ng-if="isPositive(task)">
         {{task}}
       </li>
       <form name="myForm">

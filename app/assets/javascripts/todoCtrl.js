@@ -18,6 +18,10 @@
         }
       }
 
+      $scope.isPositive = function(task){
+        return task.indexOf("stupid") === -1
+      }
+
       window.$scope = $scope;
   });
 })();
