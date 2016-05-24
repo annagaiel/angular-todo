@@ -1,1 +1,15 @@
 <h1>AngularJS Todo</h1>
+
+<div ng-app="app">
+  <div ng-controller="todoCtrl">
+    <ul>
+      <li ng-repeat="task in task_list" ng-click="toggleState(task)">
+        {{task}}
+      </li>
+      <form name="myForm">
+      <input name="myTask" ng-model="newTask">
+      <button ng-click="addTask(newTask)">Add Task</button>
+    </form>
+    </ul>
+  </div>
+</div>
